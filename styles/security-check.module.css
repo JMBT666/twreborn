@@ -1,0 +1,91 @@
+.securityCheck{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .title{
+    color: red;
+    margin: 0;
+  }
+  
+  .card{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid lightgrey;
+  }
+  
+  .card .mainImage{
+    width: 100%;
+  }
+  
+  .card .mainImage .image{
+    width: 100%;
+  }
+  
+  .card .secondImage{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .card .secondImage .image{
+    width: 50%;
+  }
+  
+  .card .check{
+    padding: 0px 30px 20px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card .check h4{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0px;
+    text-align: center;
+    font-family: Helvetica;
+  }
+  
+  .card .check p{
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    font-family: Helvetica;
+  }
+  
+  .card .check .ReCAPTCHA{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card button{
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    outline: none;
+    padding: 8px 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    border: none;
+    font-family: Helvetica;
+  }
+
+  .card button:disabled {
+      opacity: 0.7;
+  }

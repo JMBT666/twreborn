@@ -1,0 +1,95 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container .box{
+    width: 100%;
+    max-width: 611px;
+    background-color: #fff;
+    border-color: #d1d2d5 #d1d2d5 #c5c6c8 #c5c6c8!important;
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+    font-family: inherit;
+    margin-top: 80px;
+}
+
+.container .box .section{
+    display: flex;
+    border-bottom: 1px solid #dddfe2;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 12px 0;
+    margin: 0 12px;
+}
+
+.container .box .section p {
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.container .box .section strong{
+    color: #1d2129;
+    font-family: Helvetica;
+    font-weight: 600;
+    padding-bottom: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.container .box .section:last-child strong{
+    padding-bottom: 0;
+}
+
+.container .box .section .codeInput{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.container .box .section .code{
+    -webkit-appearance: none;
+    border: 1px solid #ccd0d5;
+    border-radius: 0;
+    margin: 0;
+    padding: 3px;
+    width: 140px;
+    min-width: 140px;
+    margin-right: 10px;
+}
+
+.container .box .bottom{
+    display: flex;
+    justify-content: space-between;
+    padding:  12px;
+}
+
+.container .box .bottom .btn {
+    background-color: #4267b2!important;
+    border-color: #4267b2;
+    color: #fff;
+    line-height: 26px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.container .box .bottom a{
+    color: #385898;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: Helvetica;
+}
+
+.container .box .bottom a:hover{
+    text-decoration: underline;
+}
+
